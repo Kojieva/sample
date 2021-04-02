@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="font.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body{
+			font-family: 'Poppins';
+			background-image: url("login.png");
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+}
+  ul { 
+    margin-right: 150px;
+  margin-top: 35px; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+  float: right;
+   font-weight: bolder;
+   font-size: 20px;
+
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+
+}
+a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.card{
+
+  
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 30px;
+padding: 20px 20px 50px 50px;
+margin-left: 60%;
+margin-top: 5%;
+float: left;
+background-color: #5db2ff;
+}
+.card-inner{
+
+
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 30px;
+padding: 20px 20px 50px 50px;
+margin-left: 15%;
+margin-top: -5%;
+float: left;
+
+}
+.card-inner1{
+  transition: 0.3s;
+  width: 150%;
+  border-radius: 30px;
+padding: 20px 20px 20px 50px;
+margin-left: -25%;
+margin-top: -5%;
+float: left;
+display: flex;
+
+
+}
+button {
+
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+
+  font-size: 16px;
+  margin: 4px 2px;
+
+  width: 150%;
+  font-family: 'Poppins';
+}
+
+
+.btn1{
+ padding: 10px 10px;
+ border-color: white;
+ background-color: #5db2ff;
+
+}
+
+
+input{
+  padding: 5px 15px;
+  margin: 8px 0;
+  margin-left: 5px;
+  border-radius: 25px;
+ width: 150%;
+ font-family: 'Poppins';
+ font-size: 20px;
+ border-color: white;
+
+}
+hr{ 
+  color: #ffffff;
+  border: 1px solid;
+  margin-left: 50%;
+}
+</style>
+</head>
+<body>
+
+<div>
+ <ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="#">Features</a></li>
+  <li><a href="#">About Us</a></li>
+  <li><a href="login.html">Login</a></li>
+</ul>
+</div>
+<div class="card">
+<h1 style="color: white;">Sign Up</h1>
+<div class="card-inner">
+<hr>
+<input type="text" id="username" name="username" placeholder="Username">
+<input type="password" id="password" name="password" placeholder="Password">
+<input type="password" id="password" name="password" placeholder="Email">
+<input type="password" id="password" name="password" placeholder="Birthday">
+<div class="card-inner1">
+<button class="button btn1" action="signip.html">Sign Up</button>
+<button class="button btn1">Login</button>
+</div>
+
+</div>
+  </div>
+</body>
+</html>
